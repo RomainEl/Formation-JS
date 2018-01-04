@@ -1,0 +1,31 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+nav .container-fluid .navbar-nav{
+    padding-left: 35%;
+    display : flex;
+}
+
+#sectionhaut{
+    height : 150px;
+    width : 100%;
+    background: #141414;
+    margin : 0 auto;
+}
+#pub{
+    background: #000;
+}
+#container{
+    text-align: center;
+    color: white;
+    margin : 0 auto;
+}
+#titre{
+    margin-top: 0;
+}
+.magrandeimage{
+    width: 75%;
+    z-index: -1;
+    padding-left: 200px;
+}
+div
