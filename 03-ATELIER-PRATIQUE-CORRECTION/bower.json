@@ -1,0 +1,23 @@
+{
+  "name": "Mon site Apple",
+  "homepage": "https://github.com/RomainEl/Formation-JS",
+  "authors": [
+    "Romain ELIE"
+  ],
+  "description": "Site internet d'exemple sur Apple",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "font-awesome": "fontawesome#^4.7.0",
+    "html5shiv": "^3.7.3",
+    "respond": "^1.4.2"
+  }
+}

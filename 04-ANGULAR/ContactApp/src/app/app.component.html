@@ -1,0 +1,25 @@
+<header>
+  <nav class="navbar navbar-inverse">
+    <div class="navbar-header"><a href="/" class="navbar-brand">Mes Contacts</a></div>
+  </nav>
+</header>
+<div class="row">
+  <div class="col-sm-4">
+    <!-- *ngIf : permet de faire le rendu HTML de la liste que si le tableau
+      "Contacts" contient des objets -->
+    <div *ngIf="Contacts">
+      <ul class="list-group">
+        <li class="list-group-item"*ngFor="let contact of Contacts" (click)="choisirUnContact(contact)"[class.active]="contact === contactActif">
+          {{getNomComplet(contact)}}
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class ="col-sm-8">
+    <app-profil-contact [contact]="contactActif"></app-profil-contact>
+  </div>
+</div>
+<footer class ="text-center">
+  &copy; Copyright 2018-Paris XIV
+</footer>
+<!--<pre>{{contactActif | json}}</pre>-->

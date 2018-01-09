@@ -1,0 +1,17 @@
+{
+  "name": "03-ATELIER PRATIQUE",
+  "homepage": "https://github.com/RomainEl/Formation-JS",
+  "authors": [
+    "RomainEl <34889902+RomainEl@users.noreply.github.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
