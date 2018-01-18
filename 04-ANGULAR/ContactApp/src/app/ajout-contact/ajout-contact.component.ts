@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output} from '@angular/core';
+import { Contact } from "../model/contact.interface";
 
 @Component({
   selector: 'app-ajout-contact',
@@ -12,4 +13,18 @@ export class AjoutContactComponent implements OnInit {
   ngOnInit() {
   }
 
+  @Output() unContactEstCree = new EventEmitter();
+
+  nouveauContact = {};
+  active: boolean = true;
+
+  submitContact(){
+    console.log(this.nouveauContact);
+    this.unContactEstCree.emit({
+      contact: this.nouveauContact
+    })
+    this.nouveauContact = {};
+    this.active = false;
+    setTimeout(() => this.active = true, 0);
+  }
 }

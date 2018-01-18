@@ -1,0 +1,91 @@
+
+/* General */ 
+h1, h2, h3 {
+    font-family: 'Merienda', cursive;
+}
+h1{
+    font-size : 1.6em;
+    line-height: 60px;
+    text-decoration: none;
+}
+h3{
+    color:#2F4073;
+}
+/* header */
+header{
+    min-height: 60px;
+    background:#061339;
+}
+
+/* header */
+header h1{
+    color: #FFF;
+    margin: 0 auto;
+}
+
+/* nav */
+nav.manavbar{
+    min-height: 180px;
+    background-image: url("../img/background.jpg");
+    margin-bottom:0;
+}
+nav.manavbar h2{
+    color: #FFF;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 180px;
+    text-shadow:0.05em 0.05em 0.05em #333;
+    font-size: 2.5em;
+}
+
+/*Section du haut */
+#sectionduhaut{
+    background-color:#F1F1F1;
+    padding: 50px auto;
+}
+#sectionduhaut h3{
+    text-align: center;
+    font-size: 1.5em;
+}
+.col-sm-3{
+    margin-top : 50px;
+}
+#monformulaire{
+    background-color: #F5F5F5;
+    padding: 10px;
+    border: .5px solid #E3E3E3;
+}
+.btn-primary{
+    width :100%;
+    background-color: #5CB85C;
+    border: none;
+}
+#carousel-example-generic{
+    width: 100%;
+    margin : 50px;
+}
+.carousel-caption{
+    font-size: 1.3em;
+}
+
+
+/*Section du bas */ 
+#sectiondubas{
+    background-color:#DDDDDD;
+}
+
+.tetechat{
+    width: 120%;
+    background-color:#7885A5;
+}
+.tetechat:hover{
+    background-color: #061339;
+}
+/* footer */ 
+footer{
+    background: #061339;
+}
+footer #copyright{
+    text-align: right;
+    color: #FFF;
+}

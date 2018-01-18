@@ -5,8 +5,8 @@
 */
 
 export interface Contact {
-    id    : number;
+    id?    : number;
     prenom: string;
     nom   : string;
-    email? : string;
+    email?: string;
   }

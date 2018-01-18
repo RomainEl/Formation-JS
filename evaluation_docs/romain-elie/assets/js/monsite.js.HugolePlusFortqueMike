@@ -1,0 +1,39 @@
+$(function(){
+
+    $('#monformulaire').on('submit', function(e){
+        // -- neutraliser la redirection HTML5
+        e.preventDefault();
+        
+        // -- Supprimer les différentes erreurs
+        $('#monformulaire .has-error').removeClass('has-error');
+        $('#monformulaire .text-danger').remove();
+
+        // -- Déclarer les variables à vérifier
+        var selection     = $('#selection');
+        var zonedetexte   = $('#zonedetexte');
+        //console.log(selection);
+
+        // -- Vérification de chaque champ...
+            
+            // -- 1.Vérification de la sélection
+            if(!selection.val()){
+                selection.parent().addClass('has-error');
+                $('<p class="text-danger">N\'oubliez pas de sélectionner votre chat ! </p>').appendTo(selection.parent());
+            }
+           
+
+            // -- 2.Vérification de la zone de texte
+            if(zonedetexte.val().length < 15){
+                zonedetexte.parent().addClass('has-error'); 
+                $('<p class="text-danger">N\'oubliez pas de nous donner votre raison ! </p>').appendTo(zonedetexte.parent());
+            }
+
+            if($('#monformulaire').find('.has-error').length === 0){
+                $('#monformulaire').replaceWith(`
+                    <div class= "alert alert-success">
+                        Votre demande a bien été envoyée ! Nous vous répondrons dans les meilleurs délais.
+                    </div>
+                `);
+            } 
+    });
+});

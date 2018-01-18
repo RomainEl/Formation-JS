@@ -73,4 +73,9 @@ export class AppComponent {
     this.contactActif = UnContact;
     console.log(this.contactActif);
   }
+
+  ajouterContactDansListe(event){
+    console.log(event);
+    this.Contacts.push(event.contact);
+  }
 }
